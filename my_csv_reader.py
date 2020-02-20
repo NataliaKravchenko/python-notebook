@@ -6,12 +6,13 @@ else:
     print ("Boo, no file for me")
 
 #5
-f = open('housing.data.py', 'r')
+f = open('housing.data.py')
 print(f.read())
 
-#6
 for line in f:
     print(line, end='')
 
-#7
-print(list(f))
+print('I love {} for "{}!"'.format('Geeks', 'Geeks'))
+
+
+
