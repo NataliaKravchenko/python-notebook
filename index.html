@@ -4,50 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nataliia Kravchenko | About Me</title>
-/* Center the main content */
-main {
-  width: 100%;
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 0 28px;
-  text-align: left;
-}
 
-/* Keep all sections within that column */
-main section {
-  width: 100%;
-  margin-bottom: 55px;
-}
-
-/* Space the navigation links */
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-header nav a {
-  color: inherit;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-/* Fit smaller screens */
-@media (max-width: 600px) {
-  main {
-    margin-top: 30px;
-    padding: 0 20px;
-  }
-
-  header nav {
-    gap: 14px;
-  }
-}
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -59,13 +20,13 @@ header nav a:hover {
 
     header {
       max-width: 1200px;
-      margin: auto;
+      margin: 0 auto;
       padding: 20px 28px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 16px;
     }
 
     .name {
@@ -75,18 +36,29 @@ header nav a:hover {
       color: inherit;
     }
 
-<nav aria-label="Main navigation">
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#expertise">Skills</a>
-  <a href="#contact">Contact</a>
-</nav>
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
 
+    nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      text-decoration: underline;
+    }
+
+    /* Center the content column, keeping text aligned left */
     main {
+      width: 100%;
       max-width: 900px;
       margin: 50px auto;
       padding: 0 28px;
+      text-align: left;
     }
 
     section {
@@ -97,22 +69,40 @@ header nav a:hover {
     h1 {
       font-size: 46px;
       line-height: 1.2;
-      margin-bottom: 30px;
+      margin: 0 0 30px;
     }
 
     h2 {
       font-size: 32px;
       line-height: 1.3;
+      margin: 0 0 22px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.4;
+      margin: 32px 0 8px;
     }
 
     p {
       font-size: 19px;
+      margin: 0 0 22px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      font-size: 18px;
+      margin-bottom: 12px;
     }
 
     .portrait {
       width: 280px;
-      height: 280px;
       max-width: 100%;
+      aspect-ratio: 1;
+      height: auto;
       object-fit: cover;
       object-position: center 30%;
       border-radius: 50%;
@@ -120,28 +110,44 @@ header nav a:hover {
       margin: 0 0 30px;
     }
 
-    a { color: #245b87; }
+    a {
+      color: #245b87;
+    }
 
     @media (max-width: 600px) {
-      main { margin-top: 30px; }
-      h1 { font-size: 36px; }
-      .portrait { width: 230px; height: 230px; }
-      nav { gap: 16px; }
+      header {
+        padding: 20px;
+      }
+
+      .name {
+        font-size: 23px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      main {
+        margin-top: 30px;
+        padding: 0 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      .portrait {
+        width: 230px;
+      }
     }
-    h3 {
-  font-size: 24px;
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
-li {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-nav {
-  flex-wrap: wrap;
-}
   </style>
 </head>
 
@@ -151,169 +157,177 @@ nav {
 
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#expertise">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-<main>
-  <section id="about">
-    <h1>About Me</h1>
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
 
-    <img
-      class="portrait"
-      src="./Nat.jpg"
-      alt="Nataliia Kravchenko"
-    >
+      <img
+        class="portrait"
+        src="./Nat.jpg"
+        alt="Nataliia Kravchenko"
+        width="280"
+        height="280"
+      >
 
-    <p>
-      I’m a customer success and project delivery professional
-      based in Montréal, QC, bringing together technical support
-      experience at Behavox, responsibility for 90+ customer
-      accounts at Bunge, and a background in managing
-      scientific projects.
-    </p>
+      <p>
+        I’m a customer success and project delivery professional
+        based in Montréal, QC, bringing together technical support
+        experience at Behavox, responsibility for 90+ customer
+        accounts at Bunge, and a background in managing
+        scientific projects.
+      </p>
 
-    <p>
-      My focus is on helping technology customers succeed—understanding
-      their requirements, translating complex issues into clear
-      actions, and coordinating teams to resolve problems and keep
-      delivery on track. I’m building on this experience to move
-      into IT Customer Success and Project Implementation, where
-      I can connect customer needs with technical execution.
-    </p>
+      <p>
+        My focus is on helping technology customers succeed—understanding
+        their requirements, translating complex issues into clear
+        actions, and coordinating teams to resolve problems and keep
+        delivery on track. I’m building on this experience to move
+        into IT Customer Success and Project Implementation, where
+        I can connect customer needs with technical execution.
+      </p>
 
-    <p>
-      Currently pursuing an MBA at Université de Sherbrooke,
-      I also have training in business intelligence and data
-      analytics and experience using Salesforce, SAP, Jira,
-      and Tableau.
-    </p>
-  </section>
+      <p>
+        Currently pursuing an MBA at Université de Sherbrooke,
+        I also have training in business intelligence and data
+        analytics and experience using Salesforce, SAP, Jira,
+        and Tableau.
+      </p>
+    </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
+    <section id="experience">
+      <h2>Experience</h2>
 
-    <h3>Bunge Limited, Montréal, QC</h3>
-    <p>
-      <strong>Key Account Manager</strong>
-      | April 2022–Present
-    </p>
-    <ul>
-      <li>
-        Manage a portfolio of 90+ customer accounts, serving
-        as the primary contact and coordinating service delivery
-        across internal teams and external partners.
-      </li>
-      <li>
-        Clarify customer requirements, manage expectations,
-        and coordinate order changes, delivery needs,
-        and inventory availability.
-      </li>
-      <li>
-        Investigate account issues, escalate delivery risks,
-        and keep customers informed through resolution.
-      </li>
-      <li>
-        Proposed an order-entry quality metric to help reduce
-        errors and time spent checking orders across production
-        plants and warehouses.
-      </li>
-    </ul>
+      <h3>Bunge Limited, Montréal, QC</h3>
+      <p>
+        <strong>Key Account Manager</strong>
+        | April 2022–Present
+      </p>
 
-    <h3>Behavox, Montréal, QC</h3>
-    <p>
-      <strong>Customer Support Engineer — Customer Success</strong>
-      | June 2020–April 2022
-    </p>
-    <ul>
-      <li>
-        Supported customer relationships and technical service
-        delivery across 20+ contracts involving sensitive
-        commercial information.
-      </li>
-      <li>
-        Translated customer concerns into clear technical issues
-        and worked with internal teams to investigate causes
-        and coordinate secure solutions.
-      </li>
-      <li>
-        Managed customer updates throughout case resolution
-        and supported complex escalations.
-      </li>
-      <li>
-        Achieved 120% of the case-resolution KPI during
-        a period of understaffing.
-      </li>
-    </ul>
-  </section>
+      <ul>
+        <li>
+          Manage a portfolio of 90+ customer accounts, serving
+          as the primary contact and coordinating service delivery
+          across internal teams and external partners.
+        </li>
+        <li>
+          Clarify customer requirements, manage expectations,
+          and coordinate order changes, delivery needs,
+          and inventory availability.
+        </li>
+        <li>
+          Investigate account issues, escalate delivery risks,
+          and keep customers informed through resolution.
+        </li>
+        <li>
+          Proposed an order-entry quality metric to help reduce
+          errors and time spent checking orders across production
+          plants and warehouses.
+        </li>
+      </ul>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>Master of Business Administration — In progress</strong>,
-        Université de Sherbrooke | 2025–Present
-      </li>
-      <li>
-        <strong>Specialist in Big Data and Business Intelligence</strong>,
-        Collège de Bois-de-Boulogne | 2021
-      </li>
-      <li>
-        <strong>Data Analytics for Business coursework</strong>,
-        Concordia University | 2021
-        <br>
-        Preparing Data for Business Intelligence;
-        Programming for Data Analytics
-      </li>
-      <li>
-        <strong>Master of Science</strong>,
-        Kyiv National University, Ukraine | 2006
-      </li>
-    </ul>
-  </section>
+      <h3>Behavox, Montréal, QC</h3>
+      <p>
+        <strong>Customer Support Engineer — Customer Success</strong>
+        | June 2020–April 2022
+      </p>
 
-  <section id="expertise">
-    <h2>Skills</h2>
-    <ul>
-      <li>
-        <strong>Customer Relationships:</strong>
-        Account portfolio management, customer advocacy,
-        stakeholder communication, expectation management,
-        escalation resolution
-      </li>
-      <li>
-        <strong>Project Delivery:</strong>
-        Project planning, requirements clarification,
-        timeline coordination, risk and dependency tracking,
-        project documentation
-      </li>
-      <li>
-        <strong>Analysis and Improvement:</strong>
-        Data analysis, root cause analysis, process improvement
-      </li>
-      <li>
-        <strong>Tools:</strong>
-        Salesforce, SAP, Jira, Tableau,
-        Microsoft Excel and Word
-      </li>
-      <li>
-        <strong>Languages:</strong>
-        English, French and Ukrainian
-      </li>
-    </ul>
-  </section>
+      <ul>
+        <li>
+          Supported customer relationships and technical service
+          delivery across 20+ contracts involving sensitive
+          commercial information.
+        </li>
+        <li>
+          Translated customer concerns into clear technical issues
+          and worked with internal teams to investigate causes
+          and coordinate secure solutions.
+        </li>
+        <li>
+          Managed customer updates throughout case resolution
+          and supported complex escalations.
+        </li>
+        <li>
+          Achieved 120% of the case-resolution KPI during
+          a period of understaffing.
+        </li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Connect With Me</h2>
-    <p>
-      Feel free to reach out via
-      <a href="https://www.linkedin.com/in/nat-kravchenko/">
-        LinkedIn</a>
-      or
-      <a href="mailto:kravchenko.nathalia@gmail.com">email</a>.
-    </p>
-  </section>
-</main>
+    <section id="education">
+      <h2>Education</h2>
+
+      <ul>
+        <li>
+          <strong>Master of Business Administration — In progress</strong>,
+          Université de Sherbrooke | 2025–Present
+        </li>
+        <li>
+          <strong>Specialist in Big Data and Business Intelligence</strong>,
+          Collège de Bois-de-Boulogne | 2021
+        </li>
+        <li>
+          <strong>Data Analytics for Business coursework</strong>,
+          Concordia University | 2021
+          <br>
+          Preparing Data for Business Intelligence;
+          Programming for Data Analytics
+        </li>
+        <li>
+          <strong>Master of Science</strong>,
+          Kyiv National University, Ukraine | 2006
+        </li>
+      </ul>
+    </section>
+
+    <section id="expertise">
+      <h2>Skills</h2>
+
+      <ul>
+        <li>
+          <strong>Customer Relationships:</strong>
+          Account portfolio management, customer advocacy,
+          stakeholder communication, expectation management,
+          escalation resolution
+        </li>
+        <li>
+          <strong>Project Delivery:</strong>
+          Project planning, requirements clarification,
+          timeline coordination, risk and dependency tracking,
+          project documentation
+        </li>
+        <li>
+          <strong>Analysis and Improvement:</strong>
+          Data analysis, root cause analysis, process improvement
+        </li>
+        <li>
+          <strong>Tools:</strong>
+          Salesforce, SAP, Jira, Tableau,
+          Microsoft Excel and Word
+        </li>
+        <li>
+          <strong>Languages:</strong>
+          English, French and Ukrainian
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Connect With Me</h2>
+
+      <p>
+        Feel free to reach out via
+        <a href="https://www.linkedin.com/in/nat-kravchenko/">LinkedIn</a>
+        or
+        <a href="mailto:kravchenko.nathalia@gmail.com">email</a>.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
