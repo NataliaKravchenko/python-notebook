@@ -34,19 +34,13 @@
       color: inherit;
     }
 
-    nav {
-      display: flex;
-      gap: 24px;
-    }
-
-    nav a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
+<nav aria-label="Main navigation">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#expertise">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
 
     main {
       max-width: 900px;
@@ -93,6 +87,20 @@
       .portrait { width: 230px; height: 230px; }
       nav { gap: 16px; }
     }
+    h3 {
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+nav {
+  flex-wrap: wrap;
+}
   </style>
 </head>
 
@@ -107,69 +115,164 @@
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h1>About Me</h1>
+<main>
+  <section id="about">
+    <h1>About Me</h1>
 
-      <img
-        class="portrait"
-        src="./Nat.jpg"
-        alt="Nataliia Kravchenko"
-      >
+    <img
+      class="portrait"
+      src="./Nat.jpg"
+      alt="Nataliia Kravchenko"
+    >
 
-      <p>
-        I’m a customer relationship and project delivery
-        professional based in Montréal, Québec. My background
-        combines technical support, account management, and
-        scientific project coordination.
-      </p>
+    <p>
+      I’m a customer success and project delivery professional
+      based in Montréal, QC, bringing together technical support
+      experience at Behavox, responsibility for 90+ customer
+      accounts at Bunge, and a background in managing
+      scientific projects.
+    </p>
 
-      <p>
-        At Bunge, I manage a portfolio of more than 90 customer
-        accounts. Previously, at Behavox, I supported customers
-        with technical issues, working with internal teams to
-        investigate problems and coordinate solutions.
-      </p>
+    <p>
+      My focus is on helping technology customers succeed—understanding
+      their requirements, translating complex issues into clear
+      actions, and coordinating teams to resolve problems and keep
+      delivery on track. I’m building on this experience to move
+      into IT Customer Success and Project Implementation, where
+      I can connect customer needs with technical execution.
+    </p>
 
-      <p>
-        I enjoy understanding customer needs, bringing people
-        together, and keeping projects moving. I’m currently
-        pursuing an MBA at Université de Sherbrooke and have
-        additional training in business intelligence and
-        data analytics.
-      </p>
+    <p>
+      Currently pursuing an MBA at Université de Sherbrooke,
+      I also have training in business intelligence and data
+      analytics and experience using Salesforce, SAP, Jira,
+      and Tableau.
+    </p>
+  </section>
 
-      <p>
-        My career interests include Customer Success and
-        Project Implementation roles in technology.
-      </p>
-    </section>
+  <section id="experience">
+    <h2>Experience</h2>
 
-    <section id="expertise">
-      <h2>Expertise</h2>
-      <p>
-        Customer relationships · Account coordination ·
-        Technical support · Project delivery ·
-        Issue resolution · Process improvement
-      </p>
-      <p>
-        <strong>Tools:</strong> Salesforce, SAP, Jira,
-        Tableau, Microsoft Excel and Word
-      </p>
-      <p>
-        <strong>Languages:</strong> English, French and Ukrainian
-      </p>
-    </section>
+    <h3>Bunge Limited, Montréal, QC</h3>
+    <p>
+      <strong>Key Account Manager</strong>
+      | April 2022–Present
+    </p>
+    <ul>
+      <li>
+        Manage a portfolio of 90+ customer accounts, serving
+        as the primary contact and coordinating service delivery
+        across internal teams and external partners.
+      </li>
+      <li>
+        Clarify customer requirements, manage expectations,
+        and coordinate order changes, delivery needs,
+        and inventory availability.
+      </li>
+      <li>
+        Investigate account issues, escalate delivery risks,
+        and keep customers informed through resolution.
+      </li>
+      <li>
+        Proposed an order-entry quality metric to help reduce
+        errors and time spent checking orders across production
+        plants and warehouses.
+      </li>
+    </ul>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Get in touch:
-        <a href="mailto:kravchenko.nathalia@gmail.com">
-          kravchenko.nathalia@gmail.com
-        </a>
-      </p>
-    </section>
-  </main>
+    <h3>Behavox, Montréal, QC</h3>
+    <p>
+      <strong>Customer Support Engineer — Customer Success</strong>
+      | June 2020–April 2022
+    </p>
+    <ul>
+      <li>
+        Supported customer relationships and technical service
+        delivery across 20+ contracts involving sensitive
+        commercial information.
+      </li>
+      <li>
+        Translated customer concerns into clear technical issues
+        and worked with internal teams to investigate causes
+        and coordinate secure solutions.
+      </li>
+      <li>
+        Managed customer updates throughout case resolution
+        and supported complex escalations.
+      </li>
+      <li>
+        Achieved 120% of the case-resolution KPI during
+        a period of understaffing.
+      </li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>Master of Business Administration — In progress</strong>,
+        Université de Sherbrooke | 2025–Present
+      </li>
+      <li>
+        <strong>Specialist in Big Data and Business Intelligence</strong>,
+        Collège de Bois-de-Boulogne | 2021
+      </li>
+      <li>
+        <strong>Data Analytics for Business coursework</strong>,
+        Concordia University | 2021
+        <br>
+        Preparing Data for Business Intelligence;
+        Programming for Data Analytics
+      </li>
+      <li>
+        <strong>Master of Science</strong>,
+        Kyiv National University, Ukraine | 2006
+      </li>
+    </ul>
+  </section>
+
+  <section id="expertise">
+    <h2>Skills</h2>
+    <ul>
+      <li>
+        <strong>Customer Relationships:</strong>
+        Account portfolio management, customer advocacy,
+        stakeholder communication, expectation management,
+        escalation resolution
+      </li>
+      <li>
+        <strong>Project Delivery:</strong>
+        Project planning, requirements clarification,
+        timeline coordination, risk and dependency tracking,
+        project documentation
+      </li>
+      <li>
+        <strong>Analysis and Improvement:</strong>
+        Data analysis, root cause analysis, process improvement
+      </li>
+      <li>
+        <strong>Tools:</strong>
+        Salesforce, SAP, Jira, Tableau,
+        Microsoft Excel and Word
+      </li>
+      <li>
+        <strong>Languages:</strong>
+        English, French and Ukrainian
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Connect With Me</h2>
+    <p>
+      Feel free to reach out via
+      <a href="https://www.linkedin.com/in/nat-kravchenko/">
+        LinkedIn</a>
+      or
+      <a href="mailto:kravchenko.nathalia@gmail.com">email</a>.
+    </p>
+  </section>
+</main>
 </body>
 </html>
