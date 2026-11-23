@@ -4,7 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nataliia Kravchenko | About Me</title>
+/* Center the main content */
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 28px;
+  text-align: left;
+}
 
+/* Keep all sections within that column */
+main section {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+/* Space the navigation links */
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+header nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Fit smaller screens */
+@media (max-width: 600px) {
+  main {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  header nav {
+    gap: 14px;
+  }
+}
   <style>
     * { box-sizing: border-box; }
 
